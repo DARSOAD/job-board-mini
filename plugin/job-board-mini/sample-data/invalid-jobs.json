@@ -1,0 +1,41 @@
+[
+    {
+        "index": 1,
+        "job": {
+            "title": "Copywriter"
+        },
+        "reason": "Missing fields: description, location, salary, type",
+        "timestamp": "2025-04-26 22:24:30"
+    },
+    {
+        "index": 2,
+        "job": {
+            "title": "Account Manager",
+            "description": "Experienced account manager needed to coordinate between clients and creative teams."
+        },
+        "reason": "Missing fields: location, salary, type",
+        "timestamp": "2025-04-26 22:24:30"
+    },
+    {
+        "index": 3,
+        "job": {
+            "title": "Social Media Manager",
+            "description": "Hiring a social media manager to grow client brands across platforms.",
+            "location": "Chicago, IL",
+            "type": "Full-Time"
+        },
+        "reason": "Missing fields: salary",
+        "timestamp": "2025-04-26 22:24:30"
+    },
+    {
+        "index": 4,
+        "job": {
+            "description": "Strategic marketing expert needed to plan and execute multi-channel campaigns.",
+            "location": "Remote",
+            "salary": 72000,
+            "type": "Full-Time"
+        },
+        "reason": "Missing fields: title",
+        "timestamp": "2025-04-26 22:24:30"
+    }
+]

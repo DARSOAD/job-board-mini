@@ -1,0 +1,40 @@
+[
+    {
+        "index": 1,
+        "job": {
+            "title": "Copywriter",
+            "description": "Looking for a skilled copywriter to create compelling content for ads and websites.",
+            "salary": 55000,
+            "type": "Full-Time"
+        },
+        "reason": "Missing fields: location"
+    },
+    {
+        "index": 2,
+        "job": {
+            "title": "Account Manager",
+            "description": "Experienced account manager needed to coordinate between clients and creative teams."
+        },
+        "reason": "Missing fields: location, salary, type"
+    },
+    {
+        "index": 3,
+        "job": {
+            "title": "Social Media Manager",
+            "description": "Hiring a social media manager to grow client brands across platforms.",
+            "location": "Chicago, IL",
+            "type": "Full-Time"
+        },
+        "reason": "Missing fields: salary"
+    },
+    {
+        "index": 4,
+        "job": {
+            "description": "Strategic marketing expert needed to plan and execute multi-channel campaigns.",
+            "location": "Remote",
+            "salary": 72000,
+            "type": "Full-Time"
+        },
+        "reason": "Missing fields: title"
+    }
+]

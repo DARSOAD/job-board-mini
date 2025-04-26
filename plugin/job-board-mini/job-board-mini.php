@@ -19,19 +19,22 @@ require_once plugin_dir_path(__FILE__) . 'includes/post-types.php';
 require_once plugin_dir_path(__FILE__) . 'includes/meta-fields.php';
 require_once plugin_dir_path(__FILE__) . 'includes/shortcodes.php';
 require_once plugin_dir_path(__FILE__) . 'includes/import-sample-data.php';
-
-// Enqueue styles and scripts
-wp_enqueue_script(
-    'jbmt-filter-js',
-    plugin_dir_url(__FILE__) . 'assets/js/filter.js',
-    array(),
-    filemtime(plugin_dir_path(__FILE__) . 'assets/js/filter.js'),
-    true
-);
-
-// Enqueue styles for the frontend
 require_once plugin_dir_path(__FILE__) . 'includes/rest-api.php';
 
+// Enqueue scripts and styles correctly
+add_action('wp_enqueue_scripts', function () {
+    if (!is_admin()) {
+        wp_enqueue_script(
+            'jbmt-filter-js',
+            plugin_dir_url(__FILE__) . 'assets/js/filter.js',
+            array(),
+            filemtime(plugin_dir_path(__FILE__) . 'assets/js/filter.js'),
+            true
+        );
+    }
+});
+
+// Enqueue styles for the admin area
 add_action('admin_enqueue_scripts', function () {
     wp_enqueue_style(
         'jb-admin-style',
@@ -40,3 +43,4 @@ add_action('admin_enqueue_scripts', function () {
         filemtime(plugin_dir_path(__FILE__) . 'assets/css/admin-style.css')
     );
 });
+?>

@@ -14,6 +14,8 @@ A lightweight and responsive WordPress plugin that allows you to create, list, a
 - Admin-friendly with styled meta fields
 - Secure input validation and nonce protection
 
+
+
 ---
 
 ## Installation
@@ -40,6 +42,7 @@ Insert the following shortcode in any page or post:
 [job_listings]
 ```
 
+
 ### 2. Filters (Dynamic Front-end Search)
 
 - A dynamic filter form is integrated into the front-end (Hero Section > Filters).
@@ -48,6 +51,18 @@ Insert the following shortcode in any page or post:
 - Currently loads all matching results.
 
 ---
+
+## Upload Custom JSON File
+
+In the Import Jobs page, administrators can upload their own `.json` file to import job listings dynamically.
+
+- The uploaded JSON must contain an array of jobs, where each job has the following required fields: `title`, `description`, `location`, `salary`, and `type`.
+- If any job is missing required fields or cannot be inserted, it will not be imported. Instead, the system will log the issue in an `invalid-jobs.json` file located in the `sample-data/` directory.
+- After the upload process, a clear success or warning message will be displayed:
+  - If there are errors, a download button will appear allowing the administrator to download the error report.
+  - The error report lists the problematic jobs, the missing fields, and the timestamp when the import attempt was made.
+- To help users prepare a correctly structured JSON, a button to download a sample template (`sample-data.json`) is always available under the upload form.
+- This ensures users have a reference of the required format and reduces the chances of upload errors.
 
 ## REST API Endpoints
 
