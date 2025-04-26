@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Front-End Developer",
+      "description": "We are looking for a talented Front-End Developer to create amazing user experiences.",
+      "location": "New York, NY",
+      "salary": 85000,
+      "type": "Full-Time"
+    },
+    {
+      "title": "Back-End Developer",
+      "description": "Seeking an experienced Back-End Developer to build scalable server-side applications.",
+      "location": "San Francisco, CA",
+      "salary": 95000,
+      "type": "Full-Time"
+    },
+    {
+      "title": "UX/UI Designer",
+      "description": "Creative UX/UI Designer needed to design intuitive and engaging interfaces.",
+      "location": "Austin, TX",
+      "salary": 70000,
+      "type": "Contract"
+    },
+    {
+      "title": "Project Manager",
+      "description": "Organized Project Manager wanted to lead software development teams and manage timelines.",
+      "location": "Chicago, IL",
+      "salary": 90000,
+      "type": "Full-Time"
+    },
+    {
+      "title": "QA Engineer",
+      "description": "Quality Assurance Engineer required to develop and execute exploratory and automated tests.",
+      "location": "Remote",
+      "salary": 75000,
+      "type": "Remote"
+    }
+  ]
+  
